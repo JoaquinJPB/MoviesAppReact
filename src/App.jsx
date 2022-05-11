@@ -11,6 +11,7 @@ function App() {
             <div>
                 <header>
                     <Link to='/'><h1 className={styles.title}>Movies</h1></Link>
+                    <div className={styles.underline}></div>
                 </header>
                 <main>
                     <Routes>

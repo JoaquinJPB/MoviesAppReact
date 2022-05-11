@@ -3,3 +3,11 @@
     margin-top: 2rem;
     font-size: 2.5rem;
 }
+
+.underline {
+    width: 7.85rem;
+    height: 0.25rem;
+    background: #ec1d24;
+    margin-left: auto;
+    margin-right: auto;
+}
