@@ -13,7 +13,7 @@
     background-color: azure;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 578px) {
     .movieImage{
         width: 90%;
         height: auto;

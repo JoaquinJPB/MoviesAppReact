@@ -6,7 +6,7 @@
     justify-content: center;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 578px) {
     .moviesGrid{
         grid-template-columns: 100%;
     }
