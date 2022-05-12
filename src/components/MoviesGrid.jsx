@@ -5,15 +5,11 @@ import Spinner from '../components/Spinner'
 import styles from '../styles/MoviesGrid.module.css'
 
 import get from '../utils/httpClient'
-import useQuery from '../hooks/useQuery'
 
-function MoviesGrid() {
+function MoviesGrid( {search}) {
 
     const [movies, setMovies] = useState([])
     const [isLoading, setIsLoading] = useState(true)
-
-    const query = useQuery()
-    const search = query.get('search')
 
     useEffect(() => {
         setIsLoading(true)
