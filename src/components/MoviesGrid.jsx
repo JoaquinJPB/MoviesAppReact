@@ -5,8 +5,9 @@ import Spinner from '../components/Spinner'
 import styles from '../styles/MoviesGrid.module.css'
 
 import get from '../utils/httpClient'
+import Empty from './Empty'
 
-function MoviesGrid( {search}) {
+function MoviesGrid( {search} ) {
 
     const [movies, setMovies] = useState([])
     const [isLoading, setIsLoading] = useState(true)
@@ -20,6 +21,10 @@ function MoviesGrid( {search}) {
                 setIsLoading(false)
             })
     }, [search])
+
+    if(!isLoading && movies.length === 0){
+        return <Empty />
+    }
 
     if (isLoading){
         return <Spinner />
