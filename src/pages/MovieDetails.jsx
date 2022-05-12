@@ -3,6 +3,7 @@ import { useParams } from 'react-router'
 
 import Spinner from '../components/Spinner'
 import styles from '../styles/MovieDetails.module.css'
+import get from '../utils/httpClient'
 
 function MovieDetails() {
     const { movieId } = useParams()
@@ -11,8 +12,7 @@ function MovieDetails() {
 
     useEffect(() => {
         setIsLoading(true)
-        fetch('http://localhost:5000/api/movies/'+movieId)
-            .then(result => result.json())
+        get('http://localhost:5000/api/movies/'+movieId)
             .then(data => {
                 setMovie(data)
                 setIsLoading(false)
