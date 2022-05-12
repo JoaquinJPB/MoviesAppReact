@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link, Navigate} from 'react-router-dom'
 
 import LandingPage from './pages/LandingPage'
 import MovieDetails from './pages/MovieDetails'
@@ -16,6 +16,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<LandingPage />} />
                         <Route path="/movies/:movieId" element={<MovieDetails />} />
+                        <Route path="*" element={<Navigate to='/'/>} />
                     </Routes>
                 </main>
             </div>

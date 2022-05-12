@@ -1,18 +1,16 @@
-import { useNavigate } from 'react-router'
+//import { useNavigate } from 'react-router'
+import { useSearchParams } from 'react-router-dom'
 import { FaSearch } from 'react-icons/fa'
 
-import useQuery from '../hooks/useQuery'
 import styles from '../styles/Search.module.css'
 
 function Search() {
-    const navigate = useNavigate()
+    const [query, setQuery] = useSearchParams()
+    const search = query.get('search')
 
     const handleSubmit = (e) => {
         e.preventDefault()
     }
-
-    const query = useQuery()
-    const search = query.get('search')
 
     return (
         <form className={styles.searchContainer} onSubmit={handleSubmit}>
@@ -20,12 +18,12 @@ function Search() {
                 <input 
                     className={styles.searchInput} 
                     type="text" 
-                    value={search}
+                    value={search || ''}
                     placeholder='Título...'
                     aria-label='Search movies' 
                     onChange={ (e) => {
                         const value = e.target.value
-                        navigate('/?search='+ value)
+                        setQuery({ search: value })
                     }} 
                 />
                 <FaSearch size={20} color='black' className={styles.searchButton}/>
