@@ -26,9 +26,7 @@ function Search() {
                         navigate('/?search='+ value)
                     }} 
                 />
-                <button className={styles.searchButton} type='submit'>
-                    <FaSearch size={20}/>
-                </button>
+                <FaSearch size={20} color='black' className={styles.searchButton}/>
             </div>
         </form>
     )
