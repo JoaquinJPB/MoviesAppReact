@@ -1,6 +1,6 @@
 # Movies APP Marvel MCU - Joaquin Pastore Barrios
 
-Requisitos:
+## Requisitos
 
 Front-end:
 - React 18.1.0
@@ -12,8 +12,9 @@ Back-end:
 - Mongoose 6.3.3
 - Cors 2.8.5
 - Morgan 1.10.0
-- Body-parser 1.20.0
+- Body Parser 1.20.0
 
+## Desarrollo
 Este proyecto se basa en una aplicación de visualización de todas las películas de Marvel pertenecientes al MCU. 
 
 Para el desarrollo de esta aplicación se ha creado una API Restful con NodeJS y ExpressJS, y como base de datos MongoDB. 
