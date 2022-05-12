@@ -23,7 +23,6 @@ function MovieDetails() {
         return <Spinner />
     }
 
-
     return (
         <div className={styles.detailsContainer}>
             <img className={`${styles.col} ${styles.movieImage}`} src={movie.img} alt={movie.title} />

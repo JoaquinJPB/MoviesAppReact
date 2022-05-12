@@ -1,16 +1,11 @@
 import { useEffect, useState } from 'react'
-import { useLocation } from 'react-router'
 
 import MovieCard from './MovieCard'
 import Spinner from '../components/Spinner'
 import styles from '../styles/MoviesGrid.module.css'
 
 import get from '../utils/httpClient'
-
-
-function useQuery() {
-    return new URLSearchParams(useLocation().search)
-}
+import useQuery from '../hooks/useQuery'
 
 function MoviesGrid() {
 
