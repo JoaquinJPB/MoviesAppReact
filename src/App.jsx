@@ -9,7 +9,7 @@ function App() {
         <Router>
             <div>
                 <header>
-                    <Link to='/'><h1 className={styles.title}>Movies</h1></Link>
+                    <Link to='/'><h1 className={styles.title}>Marvel UCM</h1></Link>
                     <div className={styles.underline}></div>
                 </header>
                 <main>
