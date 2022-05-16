@@ -15,8 +15,8 @@ function MoviesGrid( {search} ) {
     useEffect(() => {
         setIsLoading(true)
         const searchUrl = search ? 'https://myapimoviesjoaquin.herokuapp.com/api/movies?title=' + search : 'https://myapimoviesjoaquin.herokuapp.com/api/movies'
-        get(searchUrl).
-            then((data) => {
+        get(searchUrl)
+            .then((data) => {
                 setMovies(data)
                 setIsLoading(false)
             })
