@@ -2,17 +2,9 @@
 
 ## Requisitos
 
-Front-end:
 - React 18.1.0
 - React-Icons 4.3.1
 - React Router Dom 6.3.0
-
-Back-end:
-- ExpressJS 4.18.1
-- Mongoose 6.3.3
-- Cors 2.8.5
-- Morgan 1.10.0
-- Body Parser 1.20.0
 
 ## Desarrollo
 Este proyecto se basa en una aplicación de visualización de todas las películas de Marvel pertenecientes al MCU. 
