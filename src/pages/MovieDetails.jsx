@@ -12,7 +12,7 @@ function MovieDetails() {
 
     useEffect(() => {
         setIsLoading(true)
-        get('https://myapimoviesjoaquin.herokuapp.com/api/movies'+movieId)
+        get('https://myapimoviesjoaquin.herokuapp.com/api/movies/'+movieId)
             .then(data => {
                 setMovie(data)
                 setIsLoading(false)
